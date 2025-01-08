@@ -21,7 +21,7 @@ import static org.hamcrest.Matchers.containsStringIgnoringCase;
 
 public class ConditionalLogging {
 
-    private static final String API_KEY = System.getenv("KEY");;
+    private static final String API_KEY = System.getenv("KEY");
     private static final boolean ENABLE_LOGGING = Boolean.parseBoolean(System.getenv("ENABLE_LOGGING"));
 
     @BeforeAll
