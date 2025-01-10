@@ -52,8 +52,10 @@ public class ConditionalLogging {
                 .filters(getFilters())
                 .body(requestBody)
                 .when()
+                .log().all()
                 .post()
                 .then()
+                .log().all()
                 .statusCode(200)
                 .extract().response();
 

@@ -36,8 +36,8 @@ public class DetectLabelsTest {
 
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("base64Image", base64Image);
-        requestBody.put("maxLabels", 10);
-        requestBody.put("minConfidence", 70);
+        requestBody.put("maxLabels", 1000);
+        requestBody.put("minConfidence", 0.1);
 
         Response response = given()
                 .contentType(ContentType.JSON)

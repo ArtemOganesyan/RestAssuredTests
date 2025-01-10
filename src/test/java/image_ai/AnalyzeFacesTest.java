@@ -30,7 +30,7 @@ public class AnalyzeFacesTest {
 
     @Test
     public void testAnalyzeFaces() throws IOException {
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("images/sad-man.jpg");
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("images/happy-woman.jpg");
         byte[] imageBytes = IOUtils.toByteArray(inputStream);
 
         String base64Image = Base64.getEncoder().encodeToString(imageBytes);
