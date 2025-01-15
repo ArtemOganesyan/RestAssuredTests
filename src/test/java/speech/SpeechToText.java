@@ -24,7 +24,7 @@ public class SpeechToText {
 
     @Test
     public void testConvertSpeechToText() {
-        File audioFile = new File("output.mp3");
+        File audioFile = new File(getClass().getClassLoader().getResource("test_speech.mp3").getFile());
 
         Response response = given()
                 .contentType(ContentType.MULTIPART)

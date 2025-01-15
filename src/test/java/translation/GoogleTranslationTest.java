@@ -26,9 +26,9 @@ public class GoogleTranslationTest {
     @Test
     public void testTranslateText() {
         Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("q", "Hello, world!");
-        requestBody.put("source", "en");
-        requestBody.put("target", "es");
+        requestBody.put("q", "Вареная курица");
+        requestBody.put("source", "ru");
+        requestBody.put("target", "en");
         requestBody.put("format", "text");
 
         Response response = given()
